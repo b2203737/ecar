@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+#header {
+	height: 84px;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+#nav {
+	display: flex;
+	line-height: 84px;
+    list-style: none;
+}
+
+#nav > li {
+	display: inline-block;
+}
+
+#nav .logo {
+	height: 84px;
+}
+
+
+#nav li {
+	font-size: 16px;
+	white-space: nowrap;
+	position: relative;
+}
+
+
+#nav > li > a {
+    color: black;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+	line-height: 84px;
+    display: block;
+
+}
+#nav .ti-shopping-cart {
+	color: black;
+	line-height: 84px;
+    font-size: 24px;
+	display: block;
+}
+
+#nav .search-box{
+	float: right;
+	width: 200px;
+	background: #F4F3F3;
+	height: 30px;
+	padding: 0 24px;
+	border-radius: 15px;
+	margin-top: 11.5%;
+	margin-right: 2%;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	display:flex;
+}
+#nav .search-box .search-txt{
+	width: 190px;
+	padding: 0 24px;
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	color: black;
+	font-size: 14px;
+	line-height: 84px;
+	letter-spacing: .6px;
+}
+.search-btn{
+	text-decoration: none;
+	color: #000;
+	border: white;
+	
+}
+
+#nav > li:hover > a {
+    color: black;
+    background-color: #ccc;
+}
+
+
+#slider {
+	margin-top: 84px;
+	padding-top: 50%;
+	background: url('/assets/images/BG_Xe\ Vinfast.jpg') top center / cover no-repeat;
+}
+
+#content {
+	
+}
+
+#footer{
+	grid-area:footer-cell;
+}
+.footer0{
+	display:grid;
+	grid-template-columns: repeat(5,1fr);
+	height: 200px;
+	margin-left: 30px;
+	margin-top: 30px;
+	padding:20px;
+	padding-bottom:20px;
+	list-style:none;
+	font-family: Arial;
+	line-height:30px;
+	flex-wrap: wrap;
+}
+.footer0>div{
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+.footer0 ol{
+	list-style-type:none;
+	padding: 0;
+	margin:0;
+}
+.footer1 p, .footer2 p, .footer3 p, .footer4 p{
+	font-weight:bold;
+}
+ol li, ol li a, .end{
+	font-weight:normal;
+}
+
+#footer .footer4>a {
+	text-decoration: none;
+}
+
+.logofooter{
+	width:70%;
+	height:auto;
+	margin-left: 20px;
+}
+.end{
+	text-align:center;
+	font-family:Arial;
+	font-size:15px;
+	margin-top:35px;
+}
+
+.ti-facebook, .ti-twitter, .ti-pinterest, .ti-youtube{
+	font-size:1.65rem;
+	line-height:inherit;
+	margin-right:0.5em;
+}
+.ti-pinterest , .ti-youtube{
+	color: #55ACEE;
+}
+.ti-facebook{
+	color:#55ACEE;
+}
+.ti-twitter{
+	color:#55ACEE;
+}
+
+#footer .ti-github{
+    position: fixed;
+    bottom: 10px; /* Di chuyển đến góc dưới */
+    right: 30px; /* Di chuyển đến góc phải */
+    margin: 10px; /* phần không gian điệm */
+    z-index: 100; /* z-index */
+	height: 50px;
+	width: 50px;
+	color: blue;
+}
+
+.container {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	max-width:80rem;
+	min-height:100vh;
+	width:100%;
+	padding: 0 2rem;
+	margin: 0 auto;
+	right: 30%;
+	background-color:var(--color-light);
+	grid-area: main-cell;
+}
+
+.form{
+	width:100%;
+	height:auto;
+	margin-top:2rem;
+}
+.input-control{
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	margin-bottom: 1.25rem;
+	font-family:inherit;
+}
+.input-field{
+	font-family:inherit;
+	font-size:1rem;
+	font-weight:400;
+	line-height:inherit;
+	width:100%;
+	height:auto;
+	padding:0.75rem 1.25rem;
+	border-radius:2rem;
+	color: var(--color-black);
+	background:var(--color-grayish);
+	text-transform:unset;
+	text-rendering:optimizeLegibility;
+}
+.input-submit{
+	font-family:inherit;
+	font-size:1rem;
+	font-weight:500;
+	line-height:inherit;
+	cursor:pointer;
+	min-width:40%;
+	height:auto;
+	padding: 0.65rem 1.25rem;
+	border-radius: 2rem;
+	color:var(--color-white);
+	box-shadow:var(--color-medium);
+	text-transform:capitalize;
+	background:var(--color-blue);
+	text-rendering:optimizeLegibility;
+}
+
+.method-action{
+	font-family:inherit;
+	font-size:0.95rem;
+	font-weight:500;
+	line-height:inherit;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:auto;
+	padding:0.35rem 1.25rem;
+	border:2px solid var(--color-grayish);
+	border-radius:2rem;
+	color:var(--color-black);
+	background:var(--color-white);
+	text-transform:capitalize;
+}
+
+.contact{
+	display:grid;
+	grid-template-areas: "all-right" "notes-left";
+	font-weight:bold;
+}
+
+
+.contact_notes{	
+	grid-area:notes-left;
+	width: 40%;
+	margin-left: 360px;
+}
+
+
+
