@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 84px;
+	width: 100%;
+    background-color: #333;
+}
+#nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* Ngăn ngừa việc dồn chữ xuống dòng */
+    flex-grow: 1; /* Cho phép navigation chiếm không gian còn lại */
+}
+#nav .logo {
+    width: auto;
+    height: 84px;
+}
+#nav .ti-shopping-cart {
+    font-size: 24px;
+    display: flex;
+    position: relative;
+    bottom: 3px;
+    margin-left: 20px; /* Điều chỉnh khoảng cách giữa icon giỏ hàng và các phần tử khác */
+}
+#nav li {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 16px;
+    white-space: nowrap; /* Ngăn chữ bị dồn lại */
+}
+#nav li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+#nav li .search-box {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    position: relative;
+    bottom: 3px;
+    margin-right: 0px; /* Đẩy hộp tìm kiếm sát bên phải */
+}
+#nav li .search-box input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+#nav li .search-box button {
+    padding: 5px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+/* Đặt media query để điều chỉnh layout khi màn hình nhỏ hơn 600px */
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto; /* Đặt chiều cao tự động để nội dung có thể dàn đều */
+    }
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-grow: unset; /* Đặt lại flex-grow để tránh chiếm không gian thừa */
+    }
+    #nav .logo {
+        margin-bottom: 10px;
+    }
+    .search-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
