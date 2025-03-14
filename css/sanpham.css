@@ -260,7 +260,7 @@ ol li, .footer4>a, ol li a, .end{
     align-items: center; /* Căn giữa theo chiều dọc */
 }
 
-.yellow1, .black1, .blue1,.white1,.red1, .green1,.greenblue1, .gray1, .da1, .greenwhite1, .grayish1{
+.yellow1, .black1, .blue1, .white1,.red1, .green1,.sky-blue1, .da1, .greenwhite1, .grayish1, .pink1, .orange1{
   width: 2rem;
   height: 2rem;
   border-radius: 50%; /* Đảm bảo hình tròn bằng cách sử dụng giá trị 50% */
@@ -322,23 +322,41 @@ ol li, .footer4>a, ol li a, .end{
 .blue1{
 	background-color:var(--color-blue);
 }
+.sky-blue1{
+	background-color:var(--color-sky-blue);
+}
+.pink1{
+	background-color:var(--color-pink);
+}
 .green1{
 	background-color:var(--color-green-black);
 }
-.greenwhite1{
-	background-color:#65C8FF;
+.orange1 {
+    background-color:var(--color-orange);
 }
-.greenblue1{
-	background-color:#55EFBC;
-}
-.gray1{
-	background-color:var(--color-grayish);
-}
-.grayish1{
-	background-color:#396279;
-}
-.da1{
-	background-color:#F6FFD2;
+:root{
+    --color-orange: #f48327;
+    --color-pink: #d19fc6;
+    --color-sky-blue:#2ee0f4;
+	--color-white: #fff;
+	--color-light:#f1f5f9;
+	--color-black:#121212;
+	--color-night:#001623;
+	--color-red:#f44336;
+	--color-blue:#1a73e8;
+	--color-gray:#80868b;
+	--color-grayish:#dadce0;
+	--color-yellow:#F5FF39;
+	--color-green-black:#003012;
+	--shadow-normal:
+		0 1px 2px 0 #0000001a,
+		0 1px 2px 0 #0000000f;
+	--shadow-medium:
+		0 4px 6px -1px #0000001a,
+		0 2px 4px -1px #0000000f;
+	--shadow-large: 
+		0 10px 15px -3px #0000001a,
+		0 4px 6px -2px #0000000d;	
 }
 .product{
 	display:flex;
