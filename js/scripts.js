@@ -94,229 +94,159 @@
     
     //List sản phẩm
     var ListItem={
-        "vin-sp01":{
-            "name":"Xe máy điện VinFast Evo200",
-            "price":18000000,
+        "vf3h":{
+            "name":"VINFAST VF 3",
+            "price":299000000,
             "photo":[
-                "image/trangchu/sp1.1.jpg",
-                "image/trangchu/sp1.2.jpg",
-                "image/trangchu/sp1.3.jpg",
-                "image/trangchu/sp1.4.jpg",
-                "image/trangchu/sp1.5.jpg"
+                "assets/images/sanpham/vf3-summer-yellow.png",
+                "assets/images/sanpham/vf3-rose-pink.png",
+                "assets/images/sanpham/vf3-skye-blue.png",
+                "assets/images/sanpham/vf3-crimson-red.png"
             ],
             "color":[
                 "Vàng",
-                "Đen",
-                "Đỏ",
-                "Xanh đen",
-                "Trắng"
+                "Hồng hào",
+                "Xanh da trời",
+                "Đỏ"
             ]
         },
-        "vin-sp02":{
-            "name":"Xe máy điện VinFast Klara S (2022)",
-            "price":35000000,
+        "vf5h":{
+            "name":"VINFAST VF 5",
+            "price":529000000,
             "photo":[
-                "image/trangchu/sp2.1.jpg",
-                "image/trangchu/sp2.2.jpg",
-                "image/trangchu/sp2.3.jpg",
-                "image/trangchu/sp2.4.jpg",
-                "image/trangchu/sp2.5.jpg"
+                "assets/images/sanpham/VF5-orange.png",
+                "assets/images/sanpham/vf5-blue.png",
+                "assets/images/sanpham/vf5-white.png",
+                "assets/images/sanpham/vf5-red.png"
             ],
             "color":[
+                "Cam",
+                "Xanh dương",
                 "Trắng",
-                "Đỏ",
-                "Đen",
-                "Xanh đen",
-                "Xanh rêu"
+                "Đỏ"
             ]
         },
-        "vep-sp03":{
-            "name":"Xe máy điện Vespa Ga 50CC Roma SX",
-            "price":35000000,
+        "vf6h":{
+            "name":"VINFAST VF 6",
+            "price":689000000,
             "photo":[
-                "image/trangchu/sp3.1.jpg",
-                "image/trangchu/sp3.2.jpg",
-                "image/trangchu/sp3.3.jpg",
-                "image/trangchu/sp3.4.jpg",
-                "image/trangchu/sp3.5.jpg",
-                "image/trangchu/sp3.6.jpg",
-                "image/trangchu/sp3.7.jpg"
+                "assets/images/sanpham/vf6-green.png",
+                "assets/images/sanpham/vf6-blue.png",
+                "assets/images/sanpham/vf6-white.png",
+                "assets/images/sanpham/vf6-black.png"
             ],
             "color":[
-                "Xanh lam",
-                "Đỏ",
+                "Xanh lục",
+                "xanh dương",
                 "Trắng",
-                "Xanh lơ",
-                "Kem",
-                "Đen",
-                "Xanh nhám"
-            ]
-        },
-        "vep-sp04":{
-            "name":"Xe máy điện Vespa Sprint Notte 125",
-            "price":78000000,
-            "photo":[
-                "image/trangchu/sp4.1.jpg"
-            ],
-            "color":[
                 "Đen"
             ]
         },
-        "vin-sp05":{
-            "name":"Xe máy điện VinFast Vintro S",
-            "price":50000000,
+        "vf3":{
+            "name":"VINFAST VF 3",
+            "price":299000000,
             "photo":[
-                "image/trangchu/sp5.1.jpg",
-                "image/trangchu/sp5.2.jpg",
-                "image/trangchu/sp5.3.jpg",
-                "image/trangchu/sp5.4.jpg",
-                "image/trangchu/sp5.6.jpg"
+                "assets/images/sanpham/vf3-crimson-red.png",
+                "assets/images/sanpham/vf3-summer-yellow.png",
+                "assets/images/sanpham/vf3-rose-pink.png",
+                "assets/images/sanpham/vf3-skye-blue.png"
             ],
             "color":[
+                "Đỏ",
                 "Vàng",
+                "Hồng hào",
+                "Xanh da trời"
+            ]
+        },
+        "vf5":{
+            "name":"VINFAST VF 5",
+            "price":529000000,
+            "photo":[
+                "assets/images/sanpham/vf5-white.png",
+                "assets/images/sanpham/vf5-blue.png",
+                "assets/images/sanpham/VF5-orange.png",
+                "assets/images/sanpham/vf5-red.png"
+            ],
+            "color":[
+                "Trắng",
+                "Xanh dương",
+                "Cam",
+                "Đỏ"
+            ]
+        },
+        "vf6":{
+            "name":"VINFAST VF 6",
+            "price":689000000,
+            "photo":[
+                "assets/images/sanpham/vf6-black.png",
+                "assets/images/sanpham/vf6-blue.png",
+                "assets/images/sanpham/vf6-white.png",
+                "assets/images/sanpham/vf6-green.png"
+            ],
+            "color":[
                 "Đen",
-                "Xanh lá",
+                "xanh dương",
+                "Trắng",
+                "Xanh lục"
+            ]
+        },
+        "vf7":{
+            "name":"VINFAST VF 7",
+            "price":799000000,
+            "photo":[
+                "assets/images/sanpham/vf7-crimson-red",
+                "assets/images/sanpham/vf6-black.png",
+                "assets/images/sanpham/vf6-white.png"
+            ],
+            "color":[
                 "Đỏ",
+                "Đen",
                 "Trắng"
             ]
         },
-        "dk-sp06":{
-            "name":"Xe máy điện DK Roma Si",
-            "price":23500000,
+        "vf8":{
+            "name":"VINFAST VF8",
+            "price":1019000000,
             "photo":[
-                "image/trangchu/sp6.1.jpg"
+                "assets/images/sanpham/vf8-white.png",
+                "assets/images/sanpham/vf8-red.png"
             ],
             "color":[
-                "Đen"
+                "Trắng",
+                "Đỏ"
             ]
         },
-        "dk-sp07":{
-            "name":"Xe máy điện DK Roma Lite ",
-            "price":"18400000",
+        "vf9":{
+            "name":"VINFAST VF 9",
+            "price":1499000000,
             "photo":[
-                "image/trangchu/sp7.1.jpg",
-                "image/trangchu/sp7.2.jpg",
-                "image/trangchu/sp7.3.jpg",
-                "image/trangchu/sp7.4.jpg"
+                "assets/images/sanpham/vf9-black.png",
+                "assets/images/sanpham/vf9-white.png",
+                "assets/images/sanpham/vf9-red.png"
             ],
             "color":[
-                "Vàng",
-                "Xám",
-                "Đỏ",
+                "Đen",
+                "Trắng",
+                "Đỏ"
+            ]
+        },
+        "vfe34":{
+            "name":"VINFAST VF e34",
+            "price":668000000,
+            "photo":[
+                "assets/images/sanpham/vfe34.png"
+            ],
+            "color":[
                 "Trắng"
             ]
         },
-        "dk-sp08":{
-            "name":"Xe máy điện DK Gogo Super",
-            "price":18699000,
+        "minio":{
+            "name":"MINIO GREEN",
+            "price":269000000,
             "photo":[
-                "image/trangchu/sp8.1.jpg",
-                "image/trangchu/sp8.2.jpg",
-                "image/trangchu/sp8.3.jpg",
-                "image/trangchu/sp8.4.jpg"
+                "assets/images/sanpham/minio-green.png"
             ],
             "color":[
-                "Đen",
-                "Đỏ",
-                "Xanh đậm",
-                "Xanh lơ"
-            ]
-        },
-        "ka-sp09":{
-            "name":"Xe máy điện Kazuki Canely-S",
-            "price":18990000,
-            "photo":[
-                "image/trangchu/sp9.1.jpg",
-                "image/trangchu/sp9.2.jpg",
-                "image/trangchu/sp9.3.jpg",
-                "image/trangchu/sp9.4.jpg"
-            ],
-            "color":[
-                "Trắng",
-                "Đen",
-                "Đỏ",
-                "Xanh"
-            ]
-        },
-        "ka-sp10":{
-            "name":"Xe máy điện DK Virgo",
-            "price":18990000,
-            "photo":[
-                "image/trangchu/sp10.1.jpg"
-            ],
-            "color":[
-                "Xanh lơ"
-            ]
-        },
-        "vep-sp11":{
-            "name":"Xe máy điện Vespa Virtoria V38",
-            "price":17440000,
-            "photo":[
-                "image/trangchu/sp11.1.jpg"
-            ],
-            "color":[
-                "Xám"
-            ]
-        },
-        "vep-sp12":{
-            "name":"Xe máy điện Vespa Virtoria V89",
-            "price":18200000,
-            "photo":[
-                "image/trangchu/sp12.1.png"
-            ],
-            "color":[
-                "Xám xanh"
-            ]
-        },
-        "ka-sp13":{
-            "name":"Xe máy điện Kazuki Xmen Z2",
-            "price":16500000,
-            "photo":[
-                "image/trangchu/sp13.1.jpg"
-            ],
-            "color":[
-                "Đen"
-            ]
-        },
-        "ka-sp14":{
-            "name":"Xe máy điện Kazuki Xmen Z3",
-            "price":16540000,
-            "photo":[
-                "image/trangchu/sp14.1.jpg"
-            ],
-            "color":[
-                "Xanh"
-            ]
-        },
-        "vin-sp16":{
-            "name":"Xe máy điện VinFast Feliz S",
-            "price":26800000,
-            "photo":[
-                "image/trangchu/sp16.1.jpg",
-                "image/trangchu/sp16.2.jpg",
-                "image/trangchu/sp16.3.jpg",
-                "image/trangchu/sp16.4.jpg",
-                "image/trangchu/sp16.6.jpg"
-            ],
-            "color":[
-                "Trắng",
-                "Đỏ",
-                "Đen",
-                "Trắng Xám",
-                "Xanh đen"
-            ]
-        },
-        "vin-sp17":{
-            "name":"Xe máy điện VinFast Theon S",
-            "price":63500000,
-            "photo":[
-                "image/trangchu/sp17.1.jpg",
-                "image/trangchu/sp17.2.jpg",
-                "image/trangchu/sp17.3.jpg"
-            ],
-            "color":[
-                "Trắng",
-                "Đỏ",
                 "Đen"
             ]
         }
