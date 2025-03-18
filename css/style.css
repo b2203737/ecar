@@ -17,6 +17,7 @@
 	height: sans-serif;
 }*/
 :root{
+	--color-pink: #d79fd3;
 	--color-white: #fff;
 	--color-light:#f1f5f9;
 	--color-black:#121212;
@@ -563,7 +564,7 @@ div p a:hover{
     align-items: center; /* Căn giữa theo chiều dọc */
 }
 
-.yellow1, .black1, .blue1,.white1,.red1, .green1,.greenblue1, .gray1, .da1, .greenwhite1, .grayish1{
+.yellow1, .black1, .blue1,.white1,.red1, .green1,.greenblue1, .gray1, .da1, .greenwhite1, .pink1, .grayish1, .sky-blue1, .orange1{
   width: 2rem;
   height: 2rem;
   border-radius: 50%; /* Đảm bảo hình tròn bằng cách sử dụng giá trị 50% */
@@ -634,11 +635,20 @@ div p a:hover{
 .greenblue1{
 	background-color:#55EFBC;
 }
+.sky-blue1{
+	background-color:#20eefd;
+}
 .gray1{
 	background-color:var(--color-grayish);
 }
+.pink1{
+	background-color: var(--color-pink);
+}
 .grayish1{
 	background-color:#396279;
+}
+.orange1{
+	background-color:#f78a05;
 }
 .da1{
 	background-color:#F6FFD2;
