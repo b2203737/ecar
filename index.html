@@ -1,51 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xe điện VinFast</title>
-    <link rel="shortcut icon" type="images/icon" href="./assets/images/logo-xl.png">
-   <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
-	<script type="text/javascript" src="js/scripts.js"></script>
-    <link rel="stylesheet" href="https://b2203737.github.io/ecar/css/style.css">
-</head>
-<body>
-	<div id="main">
-        <div id="header">
-            <ul id="nav">
-                <img src="./assets/images/logo-xl.png" alt="light_logo" class="logo">
-                <li><a href="trangchu.html">Trang chủ</a></li>
-                <li><a href="sanpham.html">Sản phẩm</a></li>
-                <li><a href="tintuc.html">Tin Tức</a></li>
-                <li><a href="dangnhap.html">Đăng nhập</a></li>
-                <li><a href="dangki.html">Đăng kí</a></li>
-                <li><a href="lienhe.html">Liên hệ</a></li>
-                <li>
-                    <a href="">
-                        <i class="ti-shopping-cart"></i>
-                    </a>
-                </li>
-                <li><div class="search-box">
-                    <input onsubmit="checkSearch(event)" type="search" class="search-txt" placeholder="Bạn cần tìm gì">
-                    <button onclick="this.parentElement.search()" type="submit" class="search-btn"><i class="ti-search"></i></button>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div id="slider">
-
-
-        </div>
-
-        <div id="content">
-
-
-        </div>
-
-        <div id="footer">
-            <div class="footer0">
-				<img src="./assets/images/logo-ctu.png" class="logofooter">
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Trang chủ - EMotor Nâng tầm giá trị Việt</title>
+		<link rel="shortcut icon" type="images/icon" href="assets/images/logo-xl.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="main">
+					<div class="navbar">
+						<a href="index.html">
+							<img src="assets/images/logo-xl.png" class="logo" id="logo">
+							<!--<diV id="logo">E-MOTORCYCLE</div>-->
+						</a>
+					</div>
+					<div class="menu" id="menu">
+						<ul class="list">
+							<li><a href="index.html" class="local">Trang chủ</a></li><!--- .local đề biết vị trí đang ở đâu trong web-->
+							<li><a href="sanpham.html">Sản phẩm</a></li>		
+							<li><a href="tintuc.html">Tin tức</a></li>
+							<li><a href="dangnhap.html">Đăng nhập</a></li>
+							<li><a href="dangki.html">Đăng kí</a></li>
+							<li><a href="lienhe.html">Liên hệ</a></li>
+							<li><a href="giohang.html"><i class="fa fa-cart-arrow-down" style="font-size:26px" ></i></a></li>
+							<li><div class="search-box">
+								<input onsubmit="checkSearch(event)" type="search" class="search-txt" placeholder="Bạn cần tìm gì">
+								<button onclick="this.parentElement.search()" type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav> 
+		</header>
+		
+		<main class="one-col">
+			<article class="artical-home">
+				<a href="#">
+					<img src="assets/images/BG_Xe Vinfast.jpg" id="bg" style="width:100%;">
+				</a>
+				<h1><b>🔥Sản phẩm bán chạy trong năm 2025🔥<b></h1>
+					<div class="product">
+						<div class="item1 item">
+							<img src="assets/images/sanpham/vf3-summer-yellow.png" id="option-color1" class="pro-image">
+							<h3><a href="#">Vinfast VF3 🔥</a></h3>
+							<div class="option-color-item">
+								<button class="yellow1" onclick="document.getElementById('option-color1').src='assets/images/sanpham/vf3-summer-yellow.png'"></button>
+								<button class="pink1" onclick="document.getElementById('option-color1').src='assets/images/sanpham/vf3-rose-pink.png'"></button>
+								<button class="sky-blue1" onclick="document.getElementById('option-color1').src='assets/images/sanpham/vf3-sky-blue.png'"></button>
+								<button class="red1" onclick="document.getElementById('option-color1').src='assets/images/sanpham/vf3-crimson-red.png'"></button>
+							</div>
+							<p class="price">Giá bán: 299.000.000 VNĐ</p>
+							<div class="input-control input-sl">
+								<input type="number" name="soluong" id="vf3-01" min="1" max="10" class="input-field input-quantity" placeholder="Số lượng">
+								<button onclick="addCart('vf3-01')" class="buy-btn">Mua ngay</button>
+							</div>
+						</div>
+						
+						<div class="item4 item">
+							<img src="assets/images/sanpham/VF5-orange.png" id="option-color4" class="pro-image" style="width:80%">
+							<h3><a href="#">Vinfast VF5 🔥</a></h3>
+							<div class="option-color-item">
+								<button class="orange1" onclick="document.getElementById('option-color4').src='assets/images/sanpham/VF5-orange.png'"></button>
+								<button class="blue1" onclick="document.getElementById('option-color4').src='assets/images/sanpham/vf5-blue.png'"></button>
+								<button class="white1" onclick="document.getElementById('option-color4').src='assets/images/sanpham/vf5-white.png'"></button>
+								<button class="red1" onclick="document.getElementById('option-color4').src='assets/images/sanpham/vf5-red.png'"></button>
+							</div>
+							<p class="price">Giá bán: 529.000.000 VNĐ</p>
+							<div class="input-control input-sl">
+								<input type="number" name="soluong" id="vf5-04" min="0" max="10" class="input-field input-quantity" placeholder="Số lượng">
+								<button onclick="addCart('vf5-04')" class="buy-btn">Mua ngay</button>
+							</div>
+						</div>
+						
+						<div class="item14 item">
+							<img src="assets/images/sanpham/vf6-green.png" id="option-color14" class="pro-image">
+							<h3><a href="#">Vinfast VF6 🔥</a></h3>
+							<div class="option-color-item">
+								<button class="green1" onclick="document.getElementById('option-color14').src='assets/images/sanpham/vf6-green.png'"></button>
+								<button class="blue1" onclick="document.getElementById('option-color14').src='assets/images/sanpham/vf6-blue.png'"></button>
+								<button class="white1" onclick="document.getElementById('option-color14').src='assets/images/sanpham/vf6-white.png'"></button>
+								<button class="black1" onclick="document.getElementById('option-color14').src='assets/images/sanpham/vf6-black.png'"></button>
+							</div>
+							<p class="price">Giá bán: 689.000.000 VNĐ</p>
+							<div class="input-control input-sl">
+								<input type="number" name="soluong" id="vf6-14" min="0" max="10" class="input-field input-quantity" placeholder="Số lượng">
+								<button onclick="addCart('vf6-14')" class="buy-btn">Mua ngay</button>
+							</div>
+						</div>
+					</div>
+				<h1><b>Khám phá<b></h1>
+				<div class="product">
+					<div class="item3 item">
+						<img src="assets/images/sanpham/vf3-crimson-red.png" id="option-color6" class="pro-image">
+						<h3><a href="#">Vinfast VF3</a></h3>
+						<div class="option-color-item">
+							<button class="red1" onclick="document.getElementById('option-color6').src='assets/images/sanpham/vf3-crimson-red.png'"></button>
+							<button class="yellow1" onclick="document.getElementById('option-color6').src='assets/images/sanpham/vf3-summer-yellow.png'"></button>
+							<button class="pink1" onclick="document.getElementById('option-color6').src='assets/images/sanpham/vf3-rose-pink.png'"></button>
+							<button class="sky-blue1" onclick="document.getElementById('option-color6').src='assets/images/sanpham/vf3-sky-blue.png'"></button>
+						</div>
+						<p class="price">Giá bán: 299.000.000 VNĐ</p>
+						<div class="input-control input-sl">
+							<input type="number" name="soluong" id="vf3-06" min="1" max="10" class="input-field input-quantity" placeholder="Số lượng">
+							<button onclick="addCart('vf3-06')" class="buy-btn">Mua ngay</button>
+						</div>
+					</div>
+					
+					<div class="item4 item">
+						<img src="assets/images/sanpham/vf5-white.png" id="option-color7" class="pro-image">
+						<h3><a href="#">Vinfast VF5</a></h3>
+						<div class="option-color-item">
+							<button class="white1" onclick="document.getElementById('option-color7').src='assets/images/sanpham/vf5-white.png'"></button>
+							<button class="blue1" onclick="document.getElementById('option-color7').src='assets/images/sanpham/vf5-blue.png'"></button>
+							<button class="orange1" onclick="document.getElementById('option-color7').src='assets/images/sanpham/VF5-orange.png'"></button>
+							<button class="red1" onclick="document.getElementById('option-color7').src='assets/images/sanpham/vf5-red.png'"></button>
+						</div>
+						<p class="price">Giá bán: 529.000.000 VNĐ</p>
+						<div class="input-control input-sl">
+							<input type="number" name="soluong" id="vf5-07" min="0" max="10" class="input-field input-quantity" placeholder="Số lượng">
+							<button onclick="addCart('vf5-07')" class="buy-btn">Mua ngay</button>
+						</div>
+					</div>
+					
+					<div class="item5 item">
+						<img src="assets/images/sanpham/vf6-black.png" id="option-color8" class="pro-image" >
+						<h3><a href="#">VINFAST VF 6</a></h3>
+						<div class="option-color-item">
+							<button class="black1" onclick="document.getElementById('option-color8').src='assets/images/sanpham/vf6-black.png'"></button>
+							<button class="blue1" onclick="document.getElementById('option-color8').src='assets/images/sanpham/vf6-blue.png'"></button>
+							<button class="white1" onclick="document.getElementById('option-color8').src='assets/images/sanpham/vf6-white.png'"></button>
+							<button class="green1" onclick="document.getElementById('option-color8').src='assets/images/sanpham/vf6-green.png'"></button>
+						</div>
+						<p class="price">Giá bán: 689.000.000 VNĐ</p>
+						<div class="input-control input-sl">
+							<input type="number" name="soluong" id="vf3-06" min="0" max="10" class="input-field input-quantity" placeholder="Số lượng">
+							<button onclick="addCart('vf3-06')" class="buy-btn">Mua ngay</button>
+						</div>
+				</div>
+				
+				<div class="policy-ship">
+					<ul class="list-ship-policy" >
+						<li><a href="#">Cam kết chất lượng chính hãng</a></li>
+						<li><a href="#">Giao hàng miễn phí toàn quốc</a></li>
+						<li><a href="#">Dịch vụ sửa chữa, cứu hộ 24/7</a></li>
+						<li><a href="#">Mua hàng trả góp nhanh chóng, thủ tục đơn giản</a></li>
+					</ul>
+				</div>
+				
+				<div class="test">
+					<h2>ĐĂNG KÍ LÁI THỬ</h2>
+					<p>Đăng kí ngay hôm nay để trở thành những khách hàng trải nghiệm sớm nhất của chúng tôi!</p>
+					<form name="signin" class="form">
+						<div class="input-control">
+							<label for="name" hidden>Họ và tên</label>
+							<input type="name" name="name" id="name" class="input-field" placeholder="Họ và tên của bạn" required />
+						</div>
+						<div class="input-control">
+							<label for="phone" class="input-label" hidden>Số điện thoại</label>
+							<input type="tel" name="phone" id="phone" class="input-field" placeholder="Số điện thoại" required />
+						</div>
+						<div class="input-control test11">
+						<input type="submit" name="submit" class="input-submit" value="Gửi">	
+						</div>
+					</form>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<div class="footer">
+				<img src="assets/images/logo-ctu.png" class="logofooter">
 				<div class="footer1">
 					<p>Liên hệ với chúng tôi</p>
 					<ol>
@@ -73,31 +202,30 @@
 						<li><a href="#">Cơ hội nghề nghiệp</a></li>
 					</ol>
 				</div>
-                <div class="footer4">
+				<div class="footer4">
 					<p>Kết nối với chúng tôi</p>
-					<a target="_blank" href="#">
-						<i class="ti-facebook"></i>
+					<a target="_blank" href="http://www.facebook.com">
+						<!--<img src="facebook.svg" id="facebook">-->
+						<i class="fa fa-facebook"></i>
 					</a>
-					<a target="_blank" href="#">
-						<i class="ti-twitter"></i>
+					<a target="_blank" href="http://www.twitter.com">
+						<i class="fa fa-twitter"></i>
 					</a>
-					<a target="_blank" href="#">
-						<i class="ti-pinterest"></i>
+					<a target="_blank" href="http://www.pinterest.com">
+						<i class="fa fa-pinterest-p"></i>
 					</a> 
-					<a target="_blank" href="#">
-						<i class="ti-youtube"></i>
+					<a target="_blank" href="http://www.youtube.com">
+						<i class="fa fa-youtube-play"></i>
 					</a>
-
-                    <a target="_self" href="#">
-						<i class="ti-github" style="font-size: 50px"></i>
+					<a target="_self" href="#logo">
+						<i class="fa fa-arrow-circle-o-up" style="font-size:50px"></i>
 					</a>
 				</div>
 				
 			</div>
 			<div class="end">
-				<p>&copy 2024 VINFAST Việt Nam</p>
+				<p>&copy 2024 Electronic-Motorcycle Việt Nam</p>
 			</div>
-        </div>
-    </div>
-</body>
+		</footer>
+	</body>
 </html>
