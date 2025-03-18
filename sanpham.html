@@ -2,36 +2,41 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Sản phẩm</title>
-		<link rel="shortcut icon" type="images/icon" href="image/logocar.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>VinFast</title>
+		<link rel="shortcut icon" type="images/icon" href="assets/images/logo-xl.png">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!--js-->
-		<script type="text/javascript" src="js/scripts.js"></script>
-		<link rel="stylesheet" href="css/sanpham.css">
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
-			<div id="header">
-				<ul id="nav">
-					<img src="./assets/images/logo-xl.png" alt="light_logo" class="logo">
-					<li><a href="trangchu.html">Trang chủ</a></li>
-					<li><a href="sanpham.html">Sản phẩm</a></li>
-					<li><a href="tintuc.html">Tin Tức</a></li>
-					<li><a href="dangnhap.html">Đăng nhập</a></li>
-					<li><a href="dangki.html">Đăng kí</a></li>
-					<li><a href="lienhe.html">Liên hệ</a></li>
-					<li>
-						<a href="">
-							<i class="ti-shopping-cart"></i>
+			<nav>
+				<div class="main">
+					<div class="navbar">
+						<a href="index.html">
+							<img src="assets/images/logo-xl.png" class="logo" id="logo">
+							<!--<diV id="logo">E-MOTORCYCLE</div>-->
 						</a>
-					</li>
-					<li><div class="search-box">
-						<input onsubmit="checkSearch(event)" type="search" class="search-txt" placeholder="Bạn cần tìm gì">
-						<button onclick="this.parentElement.search()" type="submit" class="search-btn"><i class="ti-search"></i></button>
-						</div>
-					</li>
-				</ul>
-			</div>
+					</div>
+					<div class="menu" id="menu">
+						<ul class="list">
+							<li><a href="index.html" class="local">Trang chủ</a></li><!--- .local đề biết vị trí đang ở đâu trong web-->
+							<li><a href="sanpham.html">Sản phẩm</a></li>		
+							<li><a href="tintuc.html">Tin tức</a></li>
+							<li><a href="dangnhap.html">Đăng nhập</a></li>
+							<li><a href="dangki.html">Đăng kí</a></li>
+							<li><a href="lienhe.html">Liên hệ</a></li>
+							<li><a href="giohang.html"><i class="fa fa-cart-arrow-down" style="font-size:26px" ></i></a></li>
+							<li><div class="search-box">
+								<input onsubmit="checkSearch(event)" type="search" class="search-txt" placeholder="Bạn cần tìm gì">
+								<button onclick="this.parentElement.search()" type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav> 
 		</header>
 		<main class="one-col">
 			<article class="artical-home">
@@ -191,7 +196,7 @@
 							<button onclick="addCart('vfe')" class="buy-btn">Mua ngay</button>
 						</div>
 					</div>
-
+		
 					<div class="item13 item">
 						<img src="assets/images/sanpham/minio-green.png" id="option-color13" class="pro-image">
 						<h3><a href="#">MINIO GREEN</a></h3>
@@ -206,9 +211,10 @@
 					</div>
 			</article>
 		</main>
+		
 		<footer>
 			<div class="footer">
-				<img src="image/logocar.png" class="logofooter">
+				<img src="assets/images/logo-ctu.png" class="logofooter">
 				<div class="footer1">
 					<p>Liên hệ với chúng tôi</p>
 					<ol>
@@ -258,7 +264,7 @@
 				
 			</div>
 			<div class="end">
-				<p>&copy 2025 Ecar Việt Nam</p>
+				<p>&copy 2024 VinFast Việt Nam</p>
 			</div>
 		</footer>
 	</body>
