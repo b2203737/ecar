@@ -2,43 +2,34 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Tin Tức</title>
-		<link rel="shortcut icon" type="images/icon" href="image/logocar.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>VinFast</title>
+		<link rel="shortcut icon" type="images/icon" href="assets/images/logo-xl.png">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
 		<script type="text/javascript" src="script.js"></script>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
 			<nav>
 				<div class="main">
 					<div class="navbar">
-						<a href="trangchu.html">
-							<img src="image/logocar.png" class="logo" id="logo">
+						<a href="index.html">
+							<img src="assets/images/logo-xl.png" class="logo" id="logo">
 							<!--<diV id="logo">E-MOTORCYCLE</div>-->
 						</a>
 					</div>
-					<div class="menu">
-						<ul>
-							<li><a href="trangchu.html">Trang chủ</a></li>
-							<li class="dropdown">
-								<a href="sanpham.html" class="dopbtn">Sản phẩm</a>
-								<div class="dropdown-content">
-									<a href="vinfast.html">VinFast</a>
-									<a href="dk.html">DK Byke</a>
-									<a href="vespa.html">Vepspa</a>
-									<a href="kazuki.html">Kazuki</a>
-								</div>
-							</li>		
+					<div class="menu" id="menu">
+						<ul class="list">
+							<li><a href="index.html">Trang chủ</a></li><!--- .local đề biết vị trí đang ở đâu trong web-->
+							<li><a href="sanpham.html">Sản phẩm</a></li>		
 							<li><a href="tintuc.html" class="local">Tin tức</a></li>
-							<li><a href="gioithieu.html">Giới thiệu</a></li>
 							<li><a href="dangnhap.html">Đăng nhập</a></li>
 							<li><a href="dangki.html">Đăng kí</a></li>
 							<li><a href="lienhe.html">Liên hệ</a></li>
 							<li><a href="giohang.html"><i class="fa fa-cart-arrow-down" style="font-size:26px" ></i></a></li>
 							<li><div class="search-box">
-								<input onkeypress="checkSearch(event)" type="search" class="search-txt" placeholder="Bạn cần tìm gì">
+								<input onsubmit="checkSearch(event)" type="search" class="search-txt" placeholder="Bạn cần tìm gì">
 								<button onclick="this.parentElement.search()" type="submit" class="search-btn"><i class="fa fa-search"></i></button>
 								</div>
 							</li>
@@ -51,23 +42,23 @@
 		<main class="news-list">
 			<article class="new_list news_to_left">
 				<div class="gplx">
-					<img src="image/tintuc/hinh1.jpg" class="image-news">
+					<img src="assets/images/tintuc/hinh1.jpg" class="image-news">
 					<p><a href="https://baotintuc.vn/doanh-nghiep-san-pham-dich-vu/vinfast-duoc-time-vinh-danh-trong-top-500-cong-ty-tot-nhat-2025-20250311114303923.htm"><h2>VinFast được TIME vinh danh trong Top 500 Công ty tốt nhất 2025</h2></a><p>
 					<p>VinFast được đánh giá thuộc nhóm công ty “định hình vị thế của khu vực trên bản đồ kinh tế thế giới”. Sự kiện này cho thấy vai trò ngày càng gia tăng của VinFast trong việc đóng góp vào sự phát triển bền vững của kinh tế, xã hội khu vực châu Á - Thái Bình Dương.  </P>
 				</div>
 				<div class="tram-vinfast">
-					<img src="image/tintuc/hinh2.jpg" class="image-news">
+					<img src="assets/images/tintuc/hinh2.jpg" class="image-news">
 					<p><a href="https://www.honda.com.vn/o-to/tin-tuc/chuong-trinh-sua-chua-luu-dong-mobile-service-thang-32025" target="_blank" ><i>(Tin tiếp chuyển)</i> <h2>CHƯƠNG TRÌNH SỬA CHỮA LƯU ĐỘNG – MOBILE SERVICE – THÁNG 3/2025</h2> </a></p>
 					<p>"Sửa chữa lưu động” là Chương trình định kỳ đặc biệt của hệ thống Nhà phân phối ô tô của Honda Việt Nam dành riêng cho những khách hàng đang sử dụng xe Honda. Bỏ qua nỗi lo đường xa bởi các Đại lý Honda ô tô sẽ đến bên bạn. Các bạn hãy đem chiếc xe Honda yêu quý của bạn đến với địa điểm gần nhất để làm dịch vụ</p>	
 				</div>
 				<div class="emotor-insurance">
-					<img src="image/tintuc/hinh3.jpg" class="image-news">
+					<img src="assets/images/tintuc/hinh3.jpg" class="image-news">
 					<p><a href="https://cafef.vn/moi-co-2-thang-dau-nam-ma-vinfast-da-khong-de-cac-doi-thu-kip-tho-doanh-so-gap-3-lan-toyota-hyundai-rieng-vf-3-du-can-het-cac-hang-188250313094137252.chn"><h2>Mới có 2 tháng đầu năm mà VinFast đã không để các đối thủ kịp thở: Doanh số gấp 3 lần Toyota, Hyundai - Riêng VF 3 đủ 'cân' hết các hãng</h2> </a></p>
 					<p>Hãng xe điện Việt Nam - VinFast - mới đây đã công bố bàn giao hơn 12.500 ô tô điện các loại trong tháng 2/2025 tại thị trường Việt Nam, tăng trưởng 25% so với tháng liền trước. Con số trên thậm chí chỉ kém doanh số bán hàng của các thành viên thuộc Hiệp hội các nhà sản xuất ô tô Việt Nam (VAMA) là 4.674 xe.</p>	
 					
 				</div>
 				<div class="emotor-value">
-					<img src="image/tintuc/hinh4.jpg" class="image-news">
+					<img src="assets/images/tintuc/hinh4.jpg" class="image-news">
 					<p><a href="https://www.24h.com.vn/o-to/loat-xe-mpv-tai-thi-truong-trong-nuoc-giam-gia-manh-de-thu-hut-khach-c747a1647998.html?gidzl=eTsj963dkK-iowqbRFkuJQ39fI5w-xP4lyocV2cij1JbbwLu9_Iq4x36fNfpzB11viAZApVq0YLTPkcwG0"><h2>Loạt xe MPV tại thị trường trong nước giảm giá mạnh để thu hút khách</h2></a></p>
 					<p>Các hãng đang tung ra chương trình khuyến mãi cho những mẫu xe MPV
 						Thời gian gần đây, phân khúc MPV trở nên sôi nổi khi có một loạt nhiều sự lựa chọn với nhiều mức giá khác nhau. Tuy nhiên ở thời điểm hiện tại nhiều mẫu xe đang có các chương trình ưu đãi để đẩy mạnh doanh số cũng như tránh việc tồn kho.
@@ -76,14 +67,14 @@
 			</article>
 			<aside class="news_right">
 				<div class="poster">
-					<a href="#"><img src="image/salenews.png" class="image-news"></a>
-					<a href="#"><img src="image/khaitruong.png" class="image-news"></a>
+					<a href="#"><img src="assets/images/tintuc/salenews.png" class="image-news"></a>
+					<a href="#"><img src="" class="image-news"></a>
 				</div>
 			</aside>
 		</main>
 		<footer>
 			<div class="footer">
-				<img src="image/logocar.png" class="logofooter">
+				<img src="assets/images/logo-ctu.png" class="logofooter">
 				<div class="footer1">
 					<p>Liên hệ với chúng tôi</p>
 					<ol>
@@ -133,7 +124,7 @@
 				
 			</div>
 			<div class="end">
-				<p>&copy 2024 Electronic-Motorcycle Việt Nam</p>
+				<p>&copy 2024 VinFast Việt Nam</p>
 			</div>
 		</footer>
 	</body>
