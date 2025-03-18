@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>VinFast</title>
+		<link rel="shortcut icon" type="images/icon" href="assets/images/logo-xl.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body class="dangnhap">
+		<header>
+			<nav>
+				<div class="main">
+					<div class="navbar">
+						<a href="index.html">
+							<img src="assets/images/logo-xl.png" class="logo" id="logo">
+							<!--<diV id="logo">E-MOTORCYCLE</div>-->
+						</a>
+					</div>
+					<div class="menu" id="menu">
+						<ul class="list">
+							<li><a href="index.html">Trang chủ</a></li><!--- .local đề biết vị trí đang ở đâu trong web-->
+							<li><a href="sanpham.html">Sản phẩm</a></li>		
+							<li><a href="tintuc.html">Tin tức</a></li>
+							<li><a href="dangnhap.html" class="local">Đăng nhập</a></li>
+							<li><a href="dangki.html">Đăng kí</a></li>
+							<li><a href="lienhe.html">Liên hệ</a></li>
+							<li><a href="giohang.html"><i class="fa fa-cart-arrow-down" style="font-size:26px" ></i></a></li>
+							<li><div class="search-box">
+								<input onsubmit="checkSearch(event)" type="search" class="search-txt" placeholder="Bạn cần tìm gì">
+								<button onclick="this.parentElement.search()" type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav> 
+		</header>
+		
+		<main>
+			<div class="container">
+				<section class="wrapper">
+					<div class="heading">
+						<h1 class="text text-large">Đăng Nhập</h1>
+						<p class="text text-normal">Bạn chưa có tài khoản?
+							<span>
+								<a href="dangki.html" class="text text-link">Tạo tài khoản mới</a>
+							</span>
+						</p>	
+					</div>
+					
+					<form name="signin" class="form"  method="post" enctype="application/x-www-form-urlencoded" onsubmit="return lginValidate(this)" action="#">
+						<div class="input-control">
+							<label for="email" hidden>Email</label>
+							<input type="email" name="email" id="email" class="input-field" placeholder="Nhập địa chỉ email" required />
+						</div>
+						<div class="input-control">
+							<label for="password" class="input-label" hidden>Mật khẩu</label>
+							<input type="password" name="psw" id="password" class="input-field" placeholder="Nhập mật khẩu" required />
+						</div>
+						<div class="input-control">
+							<a href="#" class="text text-link">Quên mật khẩu</a>
+							<input type="submit" name="submit" class="input-submit" value="Đăng nhập" />
+						</div>
+					</form>
+					<div class="striped">
+						<span class="striped-line"></span>
+						<span class="striped-text">Hoặc</span>
+						<span class="striped-line"></span>
+					</div>
+					<div class="method">
+						<div class="method-control">
+							<a href="#" class="method-action">
+								<i class="fa fa-brands fa-google"></i>
+								<span>Đăng nhập bằng Google</span>
+							</a>
+						</div>
+						<div class="method-control">
+							<a href="http://www.facebook.com" class="method-action">
+								<i class="fa fa-facebook"></i>
+								<span>Đăng nhập bằng Facebook</span>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div class="footer">
+				<img src="assets/images/logo-ctu.png" class="logofooter">
+				<div class="footer1">
+					<p>Liên hệ với chúng tôi</p>
+					<ol>
+						
+						<li>Địa chỉ: Khu II, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Tp Cần Thơ</li>
+						<li>Điện thoại: 1900 1010</li>
+						<li>Fax: 0113113113</li>
+						<li>Email: cskh@emotor.com.vn</li>
+					</ol>
+				</div>
+				<div class="footer2">
+					<p>Tổng đài miễn phí</p>
+					<ol>
+						<li>Tư vấn: 0901 11 22 11</li>
+						<li>Hỗ trợ: 0901 11 22 22</li>
+						<li>Khiếu nại: 0901 11 22 33</li>
+					</ol>
+				</div>
+				<div class="footer3">
+					<p>Về chúng tôi</p>
+					<ol>
+						<li><a href="#">Chính sách bảo mật</a></li>
+						<li><a href="#">Chính sách mua hàng</a></li>
+						<li><a href="#">Quy định hoạt động</a></li>
+						<li><a href="#">Cơ hội nghề nghiệp</a></li>
+					</ol>
+				</div>
+				<div class="footer4">
+					<p>Kết nối với chúng tôi</p>
+					<a target="_blank" href="http://www.facebook.com">
+						<!--<img src="facebook.svg" id="facebook">-->
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a target="_blank" href="http://www.twitter.com">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a target="_blank" href="http://www.pinterest.com">
+						<i class="fa fa-pinterest-p"></i>
+					</a> 
+					<a target="_blank" href="http://www.youtube.com">
+						<i class="fa fa-youtube-play"></i>
+					</a>
+					<a target="_self" href="#logo">
+						<i class="fa fa-arrow-circle-o-up" style="font-size:50px"></i>
+					</a>
+				</div>
+				
+			</div>
+			<div class="end">
+				<p>&copy 2024 VinFast Việt Nam</p>
+			</div>
+		</footer>
+	</body>
+</html>
