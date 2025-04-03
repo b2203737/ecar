@@ -17,7 +17,6 @@
 	height: sans-serif;
 }*/
 :root{
-	--color-pink: #d79fd3;
 	--color-white: #fff;
 	--color-light:#f1f5f9;
 	--color-black:#121212;
@@ -433,7 +432,7 @@ ol li, .footer4>a, ol li a, .end{
 	
 	grid-area:notes-left;
 	width: 40%;
-	margin-left:1.5rem;
+	margin-left:20rem;
 }
 /*Từng tin tức*/
 .news{
@@ -564,7 +563,7 @@ div p a:hover{
     align-items: center; /* Căn giữa theo chiều dọc */
 }
 
-.yellow1, .black1, .blue1,.white1,.red1, .green1,.greenblue1, .gray1, .da1, .greenwhite1, .pink1, .grayish1, .sky-blue1, .orange1{
+.yellow1, .black1, .blue1,.white1,.red1, .green1,.greenblue1, .gray1, .da1, .greenwhite1, .grayish1{
   width: 2rem;
   height: 2rem;
   border-radius: 50%; /* Đảm bảo hình tròn bằng cách sử dụng giá trị 50% */
@@ -635,20 +634,11 @@ div p a:hover{
 .greenblue1{
 	background-color:#55EFBC;
 }
-.sky-blue1{
-	background-color:#20eefd;
-}
 .gray1{
 	background-color:var(--color-grayish);
 }
-.pink1{
-	background-color: var(--color-pink);
-}
 .grayish1{
 	background-color:#396279;
-}
-.orange1{
-	background-color:#f78a05;
 }
 .da1{
 	background-color:#F6FFD2;
@@ -714,9 +704,9 @@ h3 a{
 	grid-area:left-cell;
 }
 .slider{
-	grid-a
-	width:300px;
-	height:100px;
+	grid-area: ;
+	width: 300px;
+	height: 100px;
 	display:grid;
 	grid-template-columns: auto 1fr auto;
 	align-items:center;
